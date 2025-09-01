@@ -54,11 +54,12 @@ const playGame = (userChoice) => {
     showWinner(userWin, userChoice, compChoice);
   }
 };
-
 choices.forEach((choice) => {
   choice.addEventListener("click", () => {
     const userChoice = choice.getAttribute("id");
     playGame(userChoice);
   });
 });
+
+
 
